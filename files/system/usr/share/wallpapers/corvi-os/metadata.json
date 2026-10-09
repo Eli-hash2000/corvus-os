@@ -1,0 +1,13 @@
+{
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "git.eli2004@gmail.com",
+                "Name": "Eli-hash2000"
+            }
+        ],
+        "Id": "corvi-os",
+        "License": "LGPLv3",
+        "Name": "Eli-hash200"
+    }
+}
