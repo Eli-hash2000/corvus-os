@@ -1,0 +1,6 @@
+---
+# 
+type: script
+scripts:
+  - set-wallpaper.sh
+  - set-imagename.sh

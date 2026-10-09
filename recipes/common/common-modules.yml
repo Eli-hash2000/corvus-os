@@ -1,0 +1,7 @@
+---
+#
+modules:
+  - from-file: common/common-files.yml
+  - from-file: common/common-applications.yml
+  - from-file: common/common-flatpack.yml
+  - from-file: common/common-scripts.yml

@@ -1,0 +1,19 @@
+---
+#
+type: default-flatpaks
+configurations:
+  - notify: true # Send notification after install/uninstall is finished (true/false)
+    scope: system
+        # If no repo information is specified, Flathub will be used by default
+    install: # system flatpaks we want all users to have and not remove
+        - org.mozilla.firefox
+        - org.gnome.Loupe
+        - org.libreoffice.LibreOffice
+
+        - io.github.shiftey.Desktop
+
+        - md.obsidian.Obsidian
+
+        - com.valvesoftware.Steam
+        - com.visualstudio.code
+        - com.discordapp.Discord
