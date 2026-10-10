@@ -2,7 +2,7 @@
 set -oue pipefail
 
 ## CorviOS wallpaper
-magick /usr/share/backgrounds/corvus-os/Corvus-OS.png -quality 100 /usr/share/backgrounds/corvi-os/corvi-os.jxl
+magick /usr/share/backgrounds/corvus-os/Corvus-OS.png -quality 100 /usr/share/backgrounds/corvu-os/corvu-os.jxl
 ln -sf /usr/share/backgrounds/corvus-os/corvus-os.jxl /usr/share/backgrounds/default.jxl
 ln -sf /usr/share/backgrounds/corvus-os/corvus-os.jxl /usr/share/backgrounds/default-dark.jxl
 
