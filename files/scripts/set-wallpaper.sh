@@ -11,17 +11,3 @@ rm -f /usr/share/backgrounds/default.xml #remove old default.xml
 
 mkdir -p /usr/share/wallpapers/corvus-os/default/contents/images #add directory folders
 ln -s /usr/share/backgrounds/corvus-os/corvus-os.jxl /usr/share/wallpapers/corvus-os/default/contents/images/3940x2160.jxl #Add wallaper to directory 
-
-set +u
-# Force set wallpaper
-if [ "{$XDG_CURRENT_DESKTOP:-}" = "KDE" ]; then
-    WALLPAPER_PATH="/usr/share/backgrounds/default.jxl"
-    
-    # Check if a custom marker exists
-    if [ ! -f "$HOME/.config/custom_wallpaper_set" ]; then
-        plasma-apply-wallpaperimage "$WALLPAPER_PATH"
-        
-        touch "$HOME/.config/custom_wallpaper_set"
-    fi
-fi
-set -u
