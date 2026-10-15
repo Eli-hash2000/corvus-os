@@ -11,7 +11,7 @@ Theme=breeze-dark
 name=default
 
 [Wallpaper]
-Image=file:///usr/share/backgrounds/corvus-os/covus-os.jxl
+Image:corvus-os
 
 [kcminputrc][Mouse]
 cursorTheme=breeze_cursors
