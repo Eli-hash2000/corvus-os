@@ -34,12 +34,11 @@ jobs:
         uses: jasonn3/build-container-installer@main
         id: iso
         with:
-          image_name: ${{ env.IMAGE_NAME }}${{ matrix.image_suffix }}
+          image_name: ${{ env.IMAGE_NAME }}
           image_repo: ${{ steps.repo_case.outputs.lowercase }}
           image_tag: ${{ env.IMAGE_TAG }}
-          version: ${{ matrix.version }}
           variant: ${{ env.VARIANT }}
-          iso_name: ${{ env.IMAGE_NAME }}${{ matrix.image_suffix }}-${{ env.IMAGE_TAG }}-${{ matrix.version }}.iso
+          iso_name: ${{ env.IMAGE_NAME }}$-${{ env.IMAGE_TAG }}.iso
 
       - name: Upload ISO as artifact
         uses: actions/upload-artifact@v4
