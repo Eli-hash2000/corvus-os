@@ -2,8 +2,6 @@
 
 See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
 
-After setup, it is recommended you update this README to describe your custom image.
-
 ## Installation
 
 > [!WARNING]  
@@ -11,19 +9,32 @@ After setup, it is recommended you update this README to describe your custom im
 
 To rebase an existing atomic Fedora installation to the latest build:
 
-- First rebase to the unsigned image, to get the proper signing keys and policies installed:
+- # First rebase to the unsigned image, to get the proper signing keys and policies installed:
+
+- Aurora
   ```
   rpm-ostree rebase ostree-unverified-registry:ghcr.io/eli-hash2000/corvus-os:latest
   ```
-- Reboot to complete the rebase:
+- Kinoite
+  ```
+  rpm-ostree rebase ostree-unverified-registry:ghcr.io/eli-hash2000/corvus-os:br-Main-Kinoite-44
+  ```
+- # Reboot to complete the rebase:
   ```
   systemctl reboot
   ```
-- Then rebase to the signed image, like so:
+- # Then rebase to the signed image, like so:
+
+- Aurora
   ```
   rpm-ostree rebase ostree-image-signed:docker://ghcr.io/eli-hash2000/corvus-os:latest
   ```
-- Reboot again to complete the installation
+- Kionite
+  ```
+  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/eli-hash2000/corvus-os:br-Main-Kinoite-44
+  ```
+  
+- # Reboot again to complete the installation
   ```
   systemctl reboot
   ```
