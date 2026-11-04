@@ -3,10 +3,10 @@
 # image will be published to ghcr.io/<user>/<name>
 name: corvus-os
 # description will be included in the image's metadata
-description: This is my personal OS image.
+description: This is the Kinoite deriviative of corvus-os 
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/ublue-os/aurora
+base-image: ghcr.io/ublue-os/kinoite-main
 image-version: latest # You can pin to a specific version of Fedora as well
 
 # module configuration, executed in order
