@@ -9,7 +9,7 @@ ln -sf /usr/share/backgrounds/corvus/corvus-os.jxl /usr/share/backgrounds/defaul
 
 rm -f /usr/share/backgrounds/default.xml #remove old default.xml
 
-ln -s /usr/share/backgrounds/corvus/Corvus-OS.png /usr/share/wallpapers/corvus/default/contents/images/ #Add wallaper to directory 
+ln -s /usr/share/backgrounds/corvus/Corvus-OS.png /usr/share/wallpapers/corvus/contents/images/2000x1500.png #Add wallaper to directory 
 
 set +u
 # Force set wallpaper
