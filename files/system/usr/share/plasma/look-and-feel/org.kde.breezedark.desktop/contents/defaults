@@ -11,7 +11,7 @@ Theme=breeze-dark
 name=default
 
 [Wallpaper]
-Image=file:///usr/share/backgrounds/corvus-os/covus-os.jxl
+Image=corvus
 
 [kcminputrc][Mouse]
 cursorTheme=breeze_cursors
@@ -20,5 +20,5 @@ cursorTheme=breeze_cursors
 library=org.kde.breeze
 theme=Breeze
 
-[Ksplashrc][KSplash]
-Theme=org.kde.breeze.desktop
+[KSplash]
+Theme=org.kde.Breeze
