@@ -3,14 +3,14 @@ set -oue pipefail
 
 
 # Corvus-OS wallpaper
-magick /usr/share/backgrounds/corvus-os/Corvus-OS.png -quality 100 /usr/share/backgrounds/corvus-os/corvus-os.jxl #convert to .jxl
-ln -sf /usr/share/backgrounds/corvus-os/corvus-os.jxl /usr/share/backgrounds/default.jxl #defaul.jxl
-ln -sf /usr/share/backgrounds/corvus-os/corvus-os.jxl /usr/share/backgrounds/default-dark.jxl #default-dark.jxl
+magick /usr/share/backgrounds/corvus/Corvus-OS.png -quality 100 /usr/share/backgrounds/corvus/corvus-os.jxl #convert to .jxl
+ln -sf /usr/share/backgrounds/corvus/corvus-os.jxl /usr/share/backgrounds/default.jxl #defaul.jxl
+ln -sf /usr/share/backgrounds/corvus/corvus-os.jxl /usr/share/backgrounds/default-dark.jxl #default-dark.jxl
 
 rm -f /usr/share/backgrounds/default.xml #remove old default.xml
 
-mkdir -p /usr/share/wallpapers/corvus-os/default/contents/images #add directory folders
-ln -s /usr/share/backgrounds/corvus-os/corvus-os.jxl /usr/share/wallpapers/corvus-os/default/contents/images/3940x2160.jxl #Add wallaper to directory 
+mkdir -p /usr/share/wallpapers/corvus/default/contents/images #add directory folders
+ln -s /usr/share/backgrounds/corvus/corvus-os.jxl /usr/share/wallpapers/corvus/default/contents/images/3940x2160.jxl #Add wallaper to directory 
 
 set +u
 # Force set wallpaper
